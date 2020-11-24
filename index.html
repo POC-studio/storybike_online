@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+
+    <title>Storybike - Balade interactive</title>
+
+  </head>
+  <body>
+
+<style type="text/css">
+	.navbar-brand-img {
+    	max-height: 5.4rem;
+    }
+
+	#panneau {
+		position : absolute;
+	}
+	@media (max-width: 576.5px) {
+		#panneau {
+			width: 100%;
+			top: -107px;
+			left: 0;
+		} 
+		#slider {
+			width: 59%;
+			margin-left: auto; 
+			margin-right: auto;
+		}
+	}
+	@media (min-width: 576px) and (max-width: 767.5px) {
+		#panneau {
+		    top: -127px;
+		    left: 0;
+		    width: 100%;
+		}
+		#slider {
+			width: 58%;
+			margin-left: auto; 
+			margin-right: auto;
+		}
+	}
+
+	@media (min-width: 768px) {
+		#panneau {
+			top: -87px;
+			left: -65px;
+			width: 154%;
+		}
+		#slider {
+			width: 100%;
+		}
+	}
+
+	@media (min-width: 992px) {
+		#panneau {
+			top: -124px;
+			left: -101px;
+			width: 163%;
+		}
+		#slider {
+			width: 100%;
+		}
+	}
+
+	@media (min-width: 1200px) { 
+		#panneau {
+			top: -136px;
+			left: -113px;
+			width: 165%;
+		}
+		#slider {
+			width: 100%;
+		}
+	}
+
+	.flickity-button {
+	  background: #fad776;
+	  color: blue;
+	}
+	.flickity-button:hover {
+	  color: white;
+	}
+</style>  
+
+    
+    <!-- NAVBAR
+    ================================================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logo_storybike.png" class="navbar-brand-img" alt="...">
+        </a>
+
+ 	  </div>
+    </nav>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="pt-6 pt-md-8">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-md-between">
+          <div class="col-10 col-sm-8 col-md-6 order-md-2">
+            
+            <img src="assets/img/scribble.png" class="rounded img-fluid">
+
+          </div>
+          <div class="col-12 col-md-6 col-lg-5" data-aos="fade-right">
+            
+            <!-- Heading -->
+            <h1 class="font-weight-bold">
+              Un <span class="text-primary">vélo interactif</span> <br>
+              pour mettre en valeur vos projets
+            </h1>
+            
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-6">
+              Storybike est un nouveau média destiné aux lieux qui accueillent du public et qui souhaitent présenter des projets, événements, ou toute autre information auprès des nouvelles générations.  
+            </p>
+
+            <a href="#"  class="btn btn-outline-primary btn-outline">
+            	En savoir plus <span class="fe fe-arrow-down"></span>
+            </a>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- VELO INTERACTIF
+    ================================================== -->
+    <section class="pt-8 pt-md-11 pb-11" id="payItDown">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            
+            <!-- Screenshot -->
+            <div class="mb-8 mb-md-0">
+
+              <!-- Image -->
+              <img src="assets/img/storybike_points.png" alt="..." class="screenshot img-fluid mw-md-110 float-right mr-md-6 mb-6 mb-md-0">
+              
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6 offset-md-1 col-lg-5">
+
+          	<!-- Heading -->
+            <h1>
+              Installation <span class="text-primary">interactive</span>
+            </h1>
+
+            <!-- Text -->
+            <p class="text-muted mb-7">
+              Au coeur de la proposition : un vélo équipé de capteurs pour une expérience 100% interactive.
+            </p>
+            
+            <!-- List -->
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>1</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Vélo + home-trainer
+                </h3>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>2</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Capteur
+                </h3>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>3</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Écran
+                </h3>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>4</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Caméra
+                </h3>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>5</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  Boutons au guidon
+                </h3>
+
+              </div>
+
+            </div>
+            <div class="d-flex">
+                
+              <!-- Badge -->
+              <div class="badge badge-lg badge-rounded-circle badge-warning mt-1">
+                <span>6</span>
+              </div>
+              
+              <!-- Body -->
+              <div class="ml-5">
+                
+                <!-- Heading -->
+                <h3>
+                  LEDs
+                </h3>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SLIDER STORIES -->
+    <section>
+    	<div class="container pt-13 pb-15">
+    		<div class="row align-items-center justify-content-center">
+    			<div class="col-md-5 pb-13">
+    				<!-- Heading -->
+		            <h2 class="font-weight-bold">
+		              Les <span class="text-primary">stories</span>
+		            </h2>
+
+		            <!-- Text -->
+		            <p class="font-size-lg text-muted mb-4">
+		              Le vélo permet de se 'déplacer' à travers de courtes séquences vidéos inspirées des réseaux sociaux (Instagram, Snapchat, Twitter, etc.). Les boutons au guidon permettent de 'liker' des stories. Storybike permet d'intéresser les jeunes de 2 manières :  
+		            </p>
+		            <ul class="text-muted">
+		            	<li><b>Visuel</b> - en utilisant des codes visuels (UI, couleurs, GIFs animés, etc.)</li>
+		            	<li><b>Contenu</b> - en découpant le contenu en petites phrases courtes et intrigantes</li>
+		            </ul>
+
+    			</div>
+    			<div class="col-md-4 offset-md-2" style="position:relative;">
+    				<img id ="panneau" class="" src="assets/img/panneau.png">
+					<div class="" id="slider" data-flickity='{"pageDots": false,"cellAlign": "center", "wrapAround": true, "imagesLoaded": true, "fade": true}'>
+					  <div class="col-12 px-1">
+					    <img src="assets/img/Thassalia.gif" class="img-fluid rounded" alt="...">
+					  </div>
+					  <div class="col-12 px-1">
+					    <img src="assets/img/Vasco2.gif" class="img-fluid rounded" alt="...">
+					  </div>
+					  <div class="col-12 px-1">
+					    <img src="assets/img/PGL.gif" class="img-fluid rounded" alt="...">
+					  </div>
+					</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <!-- ABOUT
+    ================================================== -->
+    <section class="pt-8 pt-md-10 pb-8" id="about">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Heading -->
+            <h2 class="font-weight-bold">
+              Votre <span class="text-primary">nouveau média</span>
+            </h2>
+
+            <!-- Text -->
+            <p class="font-size-lg text-muted mb-9">
+              Storybike est un nouvel outil de diffusion de contenu spécifiquement pensé pour les jeunes générations. 
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12 col-lg-6">
+
+          	<!-- Item -->
+            <div class="row align-items-center mb-8" data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="assets/img/illustrations/illustration-5.png" alt="..." class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+                
+                <!-- Heading -->
+                <h3 class="font-weight-bold mb-2">
+                  Ludique
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                  Bien plus engageant pour les participants qu'une simple app ! 
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+            
+            <!-- Item -->
+            <div class="row align-items-center mb-8"data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+                
+                <!-- Heading -->
+                <h3 class="font-weight-bold mb-2">
+                  Adaptable 
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                	Permet de mettre en avant tous types de projets
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+
+          </div>
+          <div class="col-12 col-lg-6">
+            
+            <!-- Item -->
+            <div class="row align-items-center mb-8" data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="assets/img/illustrations/illustration-9.png" alt="..." class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+                
+                <!-- Heading -->
+                <h3 class="font-weight-bold mb-2">
+                  Administrabilité
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                  Produisez vos propres 'stories' directement dans l'interface de contribution. 
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Item -->
+            <div class="row align-items-center mb-8" data-aos="fade-up">
+              <div class="col-4 col-lg-5">
+                
+                <!-- Image -->
+                <img src="assets/img/illustrations/illustration-6.png" alt="..." class="img-fluid">
+
+              </div>
+              <div class="col-8 col-lg-7">
+                
+                <!-- Heading -->
+                <h3 class="font-weight-bold mb-2">
+                  Analytics
+                </h3>
+
+                <!-- Text -->
+                <p class="text-gray-700 mb-0">
+                  Suivez les stories qui sont les plus regardées ou 'likées'.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE
+    ================================================== -->
+    <div class="position-relative">
+      <div class="shape shape-top shape-fluid-x svg-shim text-white">
+        <svg viewBox="0 0 2880 72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2880 0H0v54.112h720s289.42 40.248 705 0c416.5-37.733 735 0 735 0h720V0z" fill="currentColor"/></svg>
+      </div>
+    </div>
+
+    <!-- VIDEO
+    ================================================== -->
+    <section class="py-12 pt-15 py-md-13 bg-cover" style="background-image: url(assets/img/storybike_bottom.jpg);">
+      <div class="container py-md-13">
+        <div class="row">
+          <div class="col-12 text-center">
+            <!-- Button -->
+            <a href="https://youtu.be/yk0__4MYC6g" class="btn btn-pill btn-white text-body shadow lift" data-fancybox>
+              <span class="h6 text-uppercase font-weight-bold"><i class="fe fe-play mr-2"></i> Voir la vidéo</span>
+            </a>
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- CTA
+    ================================================== -->
+    <section class="pt-6 pt-md-8 bg-white">
+      <div class="container pb-6 pb-md-8 border-bottom">
+        <div class="row align-items-center">
+          <div class="col-12 col-md">
+            
+            <!-- Heading -->
+            <h3 class="font-weight-bold mb-1">
+              En savoir plus
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-0">
+              Pour l'essayer ou pour en savoir plus sur le foncitonnement, n'éhsitez pas à nous contacter
+            </p>
+
+          </div>
+
+          <div class="col-auto">
+            <a href="#!" class="btn btn-primary">
+            	Contact
+            </a>           
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- FOOTER
+    ================================================== -->
+    <footer class="py-8 py-md-11 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-3">
+        
+            <!-- Brand -->
+            <img src="./assets/img/logo_poc_studio.svg" alt="..." class="footer-brand img-fluid mb-2">
+
+            <!-- Text -->
+            <p class="text-gray-700 mb-2">
+              Un projet de 
+              <a href="http://pocstudio.fr">POC studio</a>
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </footer>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+      
+  </body>
+</html>
