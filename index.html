@@ -5,19 +5,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">  
+
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/Feather/feather.css">
     <link rel="stylesheet" href="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="./assets/libs/aos/dist/aos.css">
-    <link rel="stylesheet" href="./assets/libs/choices.js/public/assets/styles/choices.min.css">
     <link rel="stylesheet" href="./assets/libs/flickity-fade/flickity-fade.css">
     <link rel="stylesheet" href="./assets/libs/flickity/dist/flickity.min.css">
-    <link rel="stylesheet" href="./assets/libs/highlightjs/styles/vs2015.css">
-    <link rel="stylesheet" href="./assets/libs/jarallax/dist/jarallax.css">
-    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css" />
 
-    <!-- Map -->
-    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet"> 
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="./assets/css/theme.min.css">
@@ -28,6 +28,12 @@
   <body>
 
 <style type="text/css">
+  h1 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .bg-light {
+    background-color: #eaeeff !important;
+  }
 	.navbar-brand-img {
     	max-height: 5.4rem;
     }
@@ -105,25 +111,25 @@
     
     <!-- NAVBAR
     ================================================== -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <nav class="navbar navbar-light bg-white">
       <div class="container-fluid">
 
         <!-- Brand -->
         <a class="navbar-brand" href="./index.html">
-          <img src="./assets/img/logo_storybike.png" class="navbar-brand-img" alt="...">
+          <img src="./assets/img/logo_storybike.png" class="navbar-brand-img" alt="Logo Storybike">
         </a>
 
- 	  </div>
+ 	    </div>
     </nav>
 
     <!-- WELCOME
     ================================================== -->
-    <section class="pt-6 pt-md-8">
+    <section class="pt-8 pt-md-8 bg-light pb-8">
       <div class="container">
         <div class="row align-items-center justify-content-center justify-content-md-between">
-          <div class="col-10 col-sm-8 col-md-6 order-md-2">
+          <div class="col-10 col-sm-8 col-lg-7 order-md-2">
             
-            <img src="assets/img/scribble.png" class="rounded img-fluid">
+            <img src="assets/img/illus_Storybike.png" class="rounded img-fluid">
 
           </div>
           <div class="col-12 col-md-6 col-lg-5" data-aos="fade-right">
@@ -135,11 +141,11 @@
             </h1>
             
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-6">
+            <p class="font-size-lg mb-6">
               Storybike est un nouveau média destiné aux lieux qui accueillent du public et qui souhaitent présenter des projets, événements, ou toute autre information auprès des nouvelles générations.  
             </p>
 
-            <a href="#"  class="btn btn-outline-primary btn-outline">
+            <a href="#plus"  class="btn btn-outline-primary btn-outline">
             	En savoir plus <span class="fe fe-arrow-down"></span>
             </a>
 
@@ -148,9 +154,9 @@
       </div> <!-- / .container -->
     </section>
 
-    <!-- VELO INTERACTIF
+    <!-- VELO INTERACTIF  
     ================================================== -->
-    <section class="pt-8 pt-md-11 pb-11" id="payItDown">
+    <section class="pt-8 pt-md-11 pb-11" id="plus">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-md-6">
@@ -167,12 +173,12 @@
           <div class="col-12 col-md-6 offset-md-1 col-lg-5">
 
           	<!-- Heading -->
-            <h1>
+            <h1 class="">
               Installation <span class="text-primary">interactive</span>
             </h1>
 
             <!-- Text -->
-            <p class="text-muted mb-7">
+            <p class="mb-7">
               Au coeur de la proposition : un vélo équipé de capteurs pour une expérience 100% interactive.
             </p>
             
@@ -207,7 +213,7 @@
                 
                 <!-- Heading -->
                 <h3>
-                  Capteur
+                  Capteur de vitesse + Arduino
                 </h3>
 
               </div>
@@ -225,7 +231,7 @@
                 
                 <!-- Heading -->
                 <h3>
-                  Écran
+                  Écran 4K
                 </h3>
 
               </div>
@@ -279,7 +285,7 @@
                 
                 <!-- Heading -->
                 <h3>
-                  LEDs
+                  LEDs interactives
                 </h3>
 
               </div>
@@ -297,15 +303,15 @@
     		<div class="row align-items-center justify-content-center">
     			<div class="col-md-5 pb-13">
     				<!-- Heading -->
-		            <h2 class="font-weight-bold">
+		            <h1 class="">
 		              Les <span class="text-primary">stories</span>
-		            </h2>
+		            </h1>
 
 		            <!-- Text -->
-		            <p class="font-size-lg text-muted mb-4">
+		            <p class="font-size-lg mb-4">
 		              Le vélo permet de se 'déplacer' à travers de courtes séquences vidéos inspirées des réseaux sociaux (Instagram, Snapchat, Twitter, etc.). Les boutons au guidon permettent de 'liker' des stories. Storybike permet d'intéresser les jeunes de 2 manières :  
 		            </p>
-		            <ul class="text-muted">
+		            <ul class="">
 		            	<li><b>Visuel</b> - en utilisant des codes visuels (UI, couleurs, GIFs animés, etc.)</li>
 		            	<li><b>Contenu</b> - en découpant le contenu en petites phrases courtes et intrigantes</li>
 		            </ul>
@@ -337,12 +343,12 @@
           <div class="col-12 col-md-10 col-lg-8 text-center">
             
             <!-- Heading -->
-            <h2 class="font-weight-bold">
+            <h1 class="">
               Votre <span class="text-primary">nouveau média</span>
-            </h2>
+            </h1>
 
             <!-- Text -->
-            <p class="font-size-lg text-muted mb-9">
+            <p class="font-size-lg mb-9">
               Storybike est un nouvel outil de diffusion de contenu spécifiquement pensé pour les jeunes générations. 
             </p>
 
@@ -353,13 +359,13 @@
 
           	<!-- Item -->
             <div class="row align-items-center mb-8" data-aos="fade-up">
-              <div class="col-4 col-lg-5">
+              <div class="col-8">
                 
                 <!-- Image -->
-                <img src="assets/img/illustrations/illustration-5.png" alt="..." class="img-fluid">
+                <img src="assets/img/illustrations/pablita-914.png" alt="..." class="img-fluid">
 
               </div>
-              <div class="col-8 col-lg-7">
+              <div class="col-12">
                 
                 <!-- Heading -->
                 <h3 class="font-weight-bold mb-2">
@@ -368,7 +374,7 @@
 
                 <!-- Text -->
                 <p class="text-gray-700 mb-0">
-                  Bien plus engageant pour les participants qu'une simple app ! 
+                  Bien plus engageant pour les participants qu'une simple application ! 
                 </p>
 
               </div>
@@ -376,13 +382,13 @@
             
             <!-- Item -->
             <div class="row align-items-center mb-8"data-aos="fade-up">
-              <div class="col-4 col-lg-5">
+              <div class="col-8">
                 
                 <!-- Image -->
-                <img src="assets/img/illustrations/illustration-1.png" alt="..." class="img-fluid">
+                <img src="assets/img/illustrations/pablita-913.png" alt="..." class="img-fluid">
 
               </div>
-              <div class="col-8 col-lg-7">
+              <div class="col-12">
                 
                 <!-- Heading -->
                 <h3 class="font-weight-bold mb-2">
@@ -403,17 +409,17 @@
             
             <!-- Item -->
             <div class="row align-items-center mb-8" data-aos="fade-up">
-              <div class="col-4 col-lg-5">
+              <div class="col-8">
                 
                 <!-- Image -->
-                <img src="assets/img/illustrations/illustration-9.png" alt="..." class="img-fluid">
+                <img src="assets/img/illustrations/pablita-page-is-under-construction.png" alt="..." class="img-fluid">
 
               </div>
-              <div class="col-8 col-lg-7">
+              <div class="col-12">
                 
                 <!-- Heading -->
                 <h3 class="font-weight-bold mb-2">
-                  Administrabilité
+                  Administrable
                 </h3>
 
                 <!-- Text -->
@@ -426,13 +432,13 @@
 
             <!-- Item -->
             <div class="row align-items-center mb-8" data-aos="fade-up">
-              <div class="col-4 col-lg-5">
+              <div class="col-8">
                 
                 <!-- Image -->
-                <img src="assets/img/illustrations/illustration-6.png" alt="..." class="img-fluid">
+                <img src="assets/img/illustrations/pablita-631.png" alt="..." class="img-fluid">
 
               </div>
-              <div class="col-8 col-lg-7">
+              <div class="col-12">
                 
                 <!-- Heading -->
                 <h3 class="font-weight-bold mb-2">
@@ -451,6 +457,69 @@
         </div> <!-- / .row -->
       </div> <!-- / .container -->
     </section>
+
+    <!-- WELCOME
+    ================================================== -->
+    <section class="py-8 pb-13">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            
+            <!-- Headin -->
+            <h1 class="">
+              <span class="text-primary">Storybike</span> en images
+            </h1>
+
+            <!-- Text -->
+            <p class="font-size-lg mb-9">
+              Notre prototype est installé depuis 1 an dans le centre commercial des Terrasses du Port à Marseille. 
+            </p>
+
+          </div>
+        </div> <!-- / .row -->
+        <div class="row">
+          <div class="col-12">
+            
+            <!-- Image -->
+            <div class="form-row">
+              <div class="col-4">
+                
+                <img src="assets/img/photos/photo-16.jpg" class="img-fluid rounded shadow-lg" alt="...">
+
+              </div>
+              <div class="col-3">
+
+                <img src="assets/img/photos/photo-17.jpg" class="img-fluid rounded shadow-lg mb-4" alt="...">
+
+                <img src="assets/img/photos/photo-18.jpg" class="img-fluid rounded shadow-lg mt-1" alt="...">
+
+              </div>
+              <div class="col-5">
+
+                <div class="form-row mb-4">
+                  <div class="col-5">
+                    
+                    <img src="assets/img/photos/photo-19.jpg" class="img-fluid rounded shadow-lg" alt="...">
+
+                  </div>
+                  <div class="col-7">
+                    
+                    <img src="assets/img/photos/photo-20.jpg" class="img-fluid rounded shadow-lg" alt="...">
+
+                  </div>
+                </div> <!-- / .row -->
+
+                <img src="assets/img/photos/photo-21.jpg" class="img-fluid rounded shadow-lg mt-1" alt="...">
+
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+
 
     <!-- SHAPE
     ================================================== -->
@@ -495,7 +564,7 @@
           </div>
 
           <div class="col-auto">
-            <a href="#!" class="btn btn-primary">
+            <a href="https://pocstudio.fr/#contact" class="btn btn-primary">
             	Contact
             </a>           
           </div>
@@ -530,24 +599,11 @@
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./assets/libs/aos/dist/aos.js"></script>
-    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
-    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
     <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
     <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
-    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
-    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
-    <script src="./assets/libs/quill/dist/quill.min.js"></script>
-    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
-    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+   
 
     <!-- Map -->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
